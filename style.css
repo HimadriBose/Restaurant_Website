@@ -1,0 +1,247 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: azure;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: crimson;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navbar .logo h1 {
+    color: wheat;
+    font-size: 2rem;
+}
+
+.nav-links {
+    
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a{
+    color: whitesmoke;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color:burlywood;
+}
+
+.hero-section {
+    background: url('./images/hero_section_background.jpg') no-repeat center center/cover;
+    color:whitesmoke;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: darkgray;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0s;
+
+}
+
+.cta-button:hover {
+    background-color: darkslategray;
+    color:white;
+}
+
+.menu-section {
+    padding: 60px 20px;
+    text-align:center;
+    background-color: rgb(217, 144, 26);
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    background-color: whitesmoke;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(0, 0, 0, 0.4);
+}
+
+.item img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item h3 {
+    font-size: 1.5rem;
+    margin:10px 0;
+    text-align: center;
+}
+
+.item p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.add-to-cart {
+    background-color: #aaa;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+    color: whitesmoke;
+}
+
+.cart-section {
+    padding: 60px 20px;
+    background-color: rgb(213, 117, 65);
+    text-align: center;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #555;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item h4 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.cart-item p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.cart-item .remove-button {
+    background-color: #888;
+    color: #aaa;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-item .remove-button:hover {
+    background-attachment: red;
+}
+
+.cart-summary {
+    margin-top: 20px;
+}
+
+.checkout-button {
+    background-color: rgb(56, 200, 56);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.checkout-button:hover:not(:disabled) {
+    background-color: green ;
+}
+
+footer {
+    background-color: lightsalmon;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
